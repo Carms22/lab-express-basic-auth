@@ -1,0 +1,27 @@
+<div class="page">
+  <img src="images/login.jpg" alt="login">
+  <div class="center-search">
+    <form action="/login" method="post" class="transparent">
+      <div class="mb-2">
+        <input type="text" 
+        name="email" 
+        class="custom-form-control form-control py-2 ps-4{{#if error}}is-invalid{{/if}}"
+        placeholder="Email: user@example.org" 
+        aria-label="User email" 
+        value="{{ user.email }}">
+      </div>
+
+      <div class="mb-3">
+        <input type="password" 
+        name="password"
+        class="custom-form-control form-control py-2 ps-4 {{#if error}}is-invalid{{/if}}" 
+        placeholder="Password"
+        aria-label="User password">
+      </div>
+      {{#if error}}<div class="text-danger text-center mb-2">{{ error }}</div>{{/if}}
+      <div class="d-grid gap-2">
+        <button type="submit" class="button-home  border-0">Login</button>
+      </div>
+    </form>
+  </div>
+</div>
