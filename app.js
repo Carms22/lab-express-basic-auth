@@ -28,9 +28,11 @@ app.use((req, res, next) => {
 const routes = require("./config/routes.config");
 app.use(routes);
 
-
-app.use((err, req, res, next) => {
-  res.render("error", { err });
+app.use(( err,req, res, next) => {
+  res.render("error" , {err});
+});
+app.use((req, res, next) => {
+  res.render("error");
 });
 
 app.listen(3000, () => console.log("Listening on port 3000"));

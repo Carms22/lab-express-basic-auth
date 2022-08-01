@@ -17,7 +17,9 @@ body {
   min-height: 50%;
   z-index: -1;
 }
-
+a{
+  color: black;
+}
 .center-search{
   margin: 150px 0 0 400px;
   position: absolute;

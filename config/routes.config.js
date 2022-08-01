@@ -8,7 +8,7 @@ const authMiddlewares = require("../middlewares/authMiddleware");
 router.get("/" , miscController.home)
 
 //USER
-router.get("/profile", authMiddlewares.isAuthenticated, usersController.profile)
+router.get("/profile",authMiddlewares.isAuthenticated,  usersController.profile)
 
 //AUTH
 router.get("/register", authController.register)
