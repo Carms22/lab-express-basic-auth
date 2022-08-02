@@ -39,9 +39,25 @@ a{
   border-radius: 10px;
   color: white;
 }
+
+.profile-card{
+  background-color: rgba(32, 2, 65, 0.5);
+  width: 450px;
+  height: 300px;
+  margin: 150px 0 0 400px;
+  text-align: center;
+
+}
 .transparent{
   opacity: 0.8;
   -moz-opacity: 0.8;
   filter: alpha(opacity=80);
   -khtml-opacity: 0.8;
-  }
+}
+
+.profile-card img{
+  position: relative;
+  margin: 10px 0 0 20px;
+  text-align: center;
+  z-index: 1;
+}

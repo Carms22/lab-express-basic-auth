@@ -61,11 +61,11 @@ module.exports.doLogin = (req, res, next) => {
         renderWithErrors();
         return;
       } else if (user) {
-        user.checkPassword(password)
+        return user.checkPassword(password)
           .then((match) => {
             if (match) {
               req.session.currentUser = user;
-              res.redirect("/profile");
+              res.redirect("/profile" );
             } else
               renderWithErrors();
           })
